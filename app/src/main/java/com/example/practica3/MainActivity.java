@@ -78,6 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 escogerColorTexto();
                 break;
         }
+
     }
 
     public void escogerColorFondo() {
