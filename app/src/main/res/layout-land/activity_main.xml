@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="0"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonMenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewContador"
+        app:layout_constraintEnd_toStartOf="@+id/textViewContador"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewContador" />
+
+    <Button
+        android:id="@+id/botonMas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewContador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toEndOf="@+id/textViewContador"
+        app:layout_constraintTop_toTopOf="@+id/textViewContador" />
+
+    <Switch
+        android:id="@+id/switchX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="x2"
+        android:checked="false"
+        app:layout_constraintEnd_toStartOf="@+id/textViewContador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonMenos" />
+
+    <Switch
+        android:id="@+id/switchMenos0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="0"
+        android:checked="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewContador"
+        app:layout_constraintTop_toBottomOf="@+id/botonMas" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="376dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Meta"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonMas" />
+
+    <Button
+        android:id="@+id/botonColorTexto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Escoger color texto"
+        app:layout_constraintEnd_toEndOf="@+id/switchMenos0"
+        app:layout_constraintStart_toStartOf="@+id/switchX2"
+        app:layout_constraintTop_toBottomOf="@+id/switchMenos0" />
+
+    <Button
+        android:id="@+id/botonColorFondo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Escoger color fondo"
+        app:layout_constraintEnd_toEndOf="@+id/botonColorTexto"
+        app:layout_constraintStart_toStartOf="@+id/botonColorTexto"
+        app:layout_constraintTop_toBottomOf="@+id/botonColorTexto" />
+</androidx.constraintlayout.widget.ConstraintLayout>
