@@ -78,6 +78,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 escogerColorTexto();
                 break;
         }
+        //TODO
+        //- que pille el numero del edittext y lo ponga como meta
+        //- lo del bundle
+        //- el landscape layout y el de tablet
+        //- si eso alguna movida extra, pero lo mismo no, para no entregarlo dentro de 200 años
 
     }
 
